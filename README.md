@@ -1,5 +1,7 @@
 # 🐶 Dog Adoption App
 
+Live App: https://furever-friend-navy.vercel.app/ 
+
 Welcome to the **Furever Friend**—your one-stop shop for finding your new best friend! Whether you’re a dog-lover or just here to browse, this site makes it easy and fun to search through shelter dogs and match with your perfect canine companion.
 
 ---
@@ -56,7 +58,7 @@ It’s designed to be simple, responsive, and—most importantly—adorable! �
 
 1. **Clone the repo**  
    ```bash
-   git clone https://github.com/<your-username>/dog-adoption.git
+   git clone https://github.com/sshah229/Furever-Friend.git
    cd dog-adoption
 
 2. **Install dependencies**  
