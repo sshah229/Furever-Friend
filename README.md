@@ -1,54 +1,70 @@
-# React + TypeScript + Vite
+# 🐶 Dog Adoption App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to the **Furever Friend**—your one-stop shop for finding your new best friend! Whether you’re a dog-lover or just here to browse, this site makes it easy and fun to search through shelter dogs and match with your perfect canine companion.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🎯 Purpose
 
-## Expanding the ESLint configuration
+This app was built to help dog enthusiasts:
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- **Discover** available shelter dogs by breed.  
+- **Filter** and **sort** results to find the ideal pup.  
+- **Favorite** dogs and generate a personalized match.  
+- **Connect** with shelters (via API) to facilitate adoptions.
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+It’s designed to be simple, responsive, and—most importantly—adorable! 🐾
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 🚀 Technologies Used
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+- **Frontend**: React + Vite + TypeScript  
+- **UI Library**: Chakra UI (for beautiful, accessible components)  
+- **HTTP Client**: Axios (with automatic cookie handling)  
+- **Routing**: React Router v6  
+- **Deployment**: Vercel
+- **Version Control**: Git + GitHub  
+
+---
+
+## 🔧 Key Functionalities
+
+1. **Authentication**  
+   - Users log in with just a name and email.  
+   - Secure session via an HttpOnly auth cookie.
+
+2. **Dog Searching & Browsing**  
+   - **Filter by breed** with a dropdown.  
+   - **Pagination**: loads 12 dogs at a time, with a “Load More” button.  
+   - **Sorting**: toggle A→Z or Z→A by breed.
+
+3. **Dog Details**  
+   - Each **Dog Card** shows: image, name, breed, age, ZIP code.
+
+4. **Favorites & Matching**  
+   - Click **Favorite** to bookmark dogs you love.  
+   - Open the **Favorites Drawer** to review favorites.  
+   - Click **Find My Match** to get a special pick from your favorites.
+
+5. **Logout**  
+   - End your session with the click of a button.
+
+---
+
+## 📦 Installation & Local Run
+
+1. **Clone the repo**  
+   ```bash
+   git clone https://github.com/<your-username>/dog-adoption.git
+   cd dog-adoption
+
+2. **Install dependencies**  
+   ```bash
+   npm install
+
+3. **Start in development mode**  
+   ```bash
+   npm run dev
+
+4. **Open your browser**  at http://localhost:5173 to start exploring!
